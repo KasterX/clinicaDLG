@@ -1,0 +1,592 @@
+/*Generales*/
+*{
+    font-family: sans-serif;
+    margin: 0;
+
+    padding: 0;
+}
+@font-face{
+    font-family: Candylicious, cursive, sans-serif;
+    src: url(./Fuentes/candylicious.zip) 
+}
+/*Media queries*/
+/*DESCKTOP*/
+@media (min-width: 1024px){
+    .mainGrids{
+    background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 60%);
+    display:grid;
+    grid-template-areas: 
+    "cabeza      cabeza     cabeza"
+    "area        texto      texto"
+    "base        contenido  contenido"
+    "cabeza2     cabeza2    cabeza2"
+    "contenido2  contenido2 contenido2"
+    "cabeza3     cabeza3    cabeza3"
+    "area3       texto3     texto3"
+    "base3       contenido3 contenido3"
+    "cabeza4     cabeza4    cabeza4"
+    "area4       texto4     texto4"
+    "contenido4  contenido4 contenido4"
+    "cabeza5     cabeza5    cabeza5"
+    "area5       texto5     texto5"
+    "base5       contenido5 contenido5"
+    "cabeza6     cabeza6    cabeza6"
+    "base6       contenido6 contenido6"
+    ;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows:      auto
+}
+#encabezado{
+    grid-area:cabeza;}
+#descripcion{
+    grid-area:area;
+}
+#parrafo{
+    grid-area:base;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: azure;
+    font-size: 35px;}
+#personas{
+    grid-area:texto;
+    font-size: 20px;
+    background-color: #00ffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    }
+#contenido{
+    grid-area:contenido;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row-reverse;
+}  
+/* fila 2*/
+#encabezado2{
+    grid-area:cabeza2;}
+#contenido2{
+    grid-area:contenido2;
+    }
+/*fila 3*/
+#encabezado3{
+    grid-area:cabeza3;}
+#descripcion3{
+    grid-area:area3;}
+#parrafo3{
+    grid-area:base3;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: azure;
+    font-size: 35px;}
+#personas3{
+    grid-area:texto3;
+    font-size: 20px;
+    background-color: #00ffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+#contenido3{
+    grid-area:contenido3;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row-reverse}
+/*fila 4 */
+#encabezado4{
+    grid-area:cabeza4;}
+#descripcion4{
+    grid-area:area4;}
+#personas4{
+    grid-area:texto4;
+    font-size: 20px;
+    background-color: #00ffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+#contenido4{
+    grid-area:contenido4;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-around;}
+/* fila 5 */
+#encabezado5{
+    grid-area:cabeza5;}
+#descripcion5{
+    grid-area:area5;}
+#parrafo5{
+    grid-area:base5;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: azure;
+    font-size: 35px;
+}
+#personas5{
+    grid-area:texto5;
+    font-size: 20px;
+    background-color: #00ffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+#contenido5{
+    grid-area:contenido5;
+    display: flex;
+    justify-content:center;
+    background-color: #36af7d;
+    font-size: 30px;
+    border-radius: 50%;
+    align-items: center;
+    list-style-type: none;}
+/* fila 6 */
+#encabezado6{
+    grid-area:cabeza6;}
+#parrafo6{
+    grid-area:base6;
+    display: flex;
+    align-items: flex-end;
+    color: azure;
+    font-size: 35px;}
+#contenido6{
+     grid-area:contenido6;
+     display: flex;
+     flex-flow: column;
+     justify-content:center;
+     list-style-type: none;
+    text-align: center;}}
+                /**********TABLET**************/
+@media (min-width: 481px) and (max-width: 1023px){
+    .mainGrids{
+        background-color: #abe9cd;
+        background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 60%);
+        display:grid;
+        grid-template-areas:
+            "cabeza     cabeza"
+            "area       texto"
+            "base       contenido"
+            "cabeza2    cabeza2"
+            "contenido2 contenido2"
+            "cabeza3    cabeza3"
+            "area3      texto3"
+            "base3      contenido3"
+            "cabeza4    cabeza4"
+            "area4      texto4"
+            "contenido4 contenido4"
+            "cabeza5    cabeza5"
+            "area5      texto5"
+            "base5      contenido5"
+            "cabeza6    cabeza6"
+            "base6      contenido6"
+        ;
+        grid-template-columns: 40% 60%;
+        grid-template-rows:    auto
+    }
+    /* fila 1*/
+    #encabezado{
+        grid-area:cabeza;}
+    #descripcion{
+        grid-area:area;
+    }
+    #parrafo{
+        grid-area:base;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: azure;
+        font-size: 35px;}
+    #personas{
+        grid-area:texto;
+        font-size: 20px;
+        background-color: #00ffff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+        }
+    #contenido{
+        grid-area:contenido;
+        list-style-type: none;
+        display: flex;
+        flex-flow: column;
+    }  
+    /* fila 2*/
+    #encabezado2{
+        grid-area:cabeza2;}
+    #contenido2{
+        grid-area:contenido2;
+        }
+    /*fila 3*/
+    #encabezado3{
+        grid-area:cabeza3;}
+    #descripcion3{
+        grid-area:area3;}
+    #parrafo3{
+        grid-area:base3;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: azure;
+        font-size: 35px;}
+    #personas3{
+        grid-area:texto3;
+        font-size: 20px;
+        background-color: #00ffff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    #contenido3{
+        grid-area:contenido3;
+        list-style-type: none;
+        display: flex;
+        flex-flow: column;
+        align-items: center;}
+    /*fila 4 */
+    #encabezado4{
+        grid-area:cabeza4;}
+    #descripcion4{
+        grid-area:area4;}
+    #personas4{
+        grid-area:texto4;
+        font-size: 20px;
+        background-color: #00ffff;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    #contenido4{
+        grid-area:contenido4;
+        display: flex;
+        flex-flow: column;
+        justify-content: center ;
+        align-items: center;}
+    /* fila 5 */
+    #encabezado5{
+        grid-area:cabeza5;}
+    #descripcion5{
+        grid-area:area5;}
+    #parrafo5{
+        grid-area:base5;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column-reverse;
+        color: azure;
+        font-size: 35px;
+    }
+    #personas5{
+        grid-area:texto5;
+        font-size: 20px;
+        background-color: #00ffff;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    #contenido5{
+        grid-area:contenido5;
+        display: flex;
+        justify-content:center;
+        background-color: #36af7d;
+        font-size: 25px;
+        border-radius: 50%;
+        align-items: center;
+        text-align: center;
+        list-style-type: none;
+        }
+    /* fila 6 */
+    #encabezado6{
+        grid-area:cabeza6;}
+    #parrafo6{
+        grid-area:base6;
+        display: flex;
+        align-items: flex-end;
+        color: azure;
+        font-size: 35px;}
+    #contenido6{
+         grid-area:contenido6;
+         display: flex;
+         flex-flow: column;
+         justify-content:center;
+         list-style-type: none;
+        text-align: center;}
+}
+/*SMARTPHONE*/
+@media (max-width: 480px){
+    .mainGrids{
+        background-color: #abe9cd;
+        background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 60%);
+        display:grid;
+        grid-template-areas:
+            "cabeza     cabeza"
+            "area       texto"
+            "base       base"
+            "contenido  contenido"
+            "cabeza2    cabeza2"
+            "contenido2 contenido2"
+            "cabeza3    cabeza3"
+            "area3      texto3"
+            "base3      base3"
+            "contenido3 contenido3"
+            "cabeza4    cabeza4"
+            "area4      texto4"
+            "contenido4 contenido4"
+            "cabeza5    cabeza5"
+            "area5      texto5"
+            "base5      base5"
+            "contenido5 contenido5"
+            "cabeza6    cabeza6"
+            "base6      base6"
+            "contenido6 contenido6"
+        ;
+        grid-template-columns: 40% 60%;
+        grid-template-rows:    auto
+    }
+    /* fila 1*/
+    #encabezado{
+        grid-area:cabeza;}
+    #descripcion{
+        grid-area:area;
+    }
+    #parrafo{
+        grid-area:base;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: azure;
+        font-size: 35px;}
+    #personas{
+        grid-area:texto;
+        font-size: 20px;
+        background-color: #00ffff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+        }
+    #contenido{
+        grid-area:contenido;
+        list-style-type: none;
+        display: flex;
+        flex-flow: column-reverse;
+        align-items: center;
+    }  
+    /* fila 2*/
+    #encabezado2{
+        grid-area:cabeza2;}
+    #contenido2{
+        grid-area:contenido2;
+        }
+    /*fila 3*/
+    #encabezado3{
+        grid-area:cabeza3;}
+    #descripcion3{
+        grid-area:area3;}
+    #parrafo3{
+        grid-area:base3;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: azure;
+        font-size: 35px;}
+    #personas3{
+        grid-area:texto3;
+        font-size: 20px;
+        background-color: #00ffff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    #contenido3{
+        grid-area:contenido3;
+        list-style-type: none;
+        display: flex;
+        flex-flow: column-reverse;
+        align-items: center;}
+    /*fila 4 */
+    #encabezado4{
+        grid-area:cabeza4;}
+    #descripcion4{
+        grid-area:area4;}
+    #personas4{
+        grid-area:texto4;
+        font-size: 20px;
+        background-color: #00ffff;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    #contenido4{
+        grid-area:contenido4;
+        display: flex;
+        flex-flow: column;
+        justify-content: center ;
+        align-items: center;}
+    /* fila 5 */
+    #encabezado5{
+        grid-area:cabeza5;}
+    #descripcion5{
+        grid-area:area5;}
+    #parrafo5{
+        grid-area:base5;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column-reverse;
+        color: azure;
+        font-size: 35px;
+    }
+    #personas5{
+        grid-area:texto5;
+        font-size: 20px;
+        background-color: #00ffff;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    #contenido5{
+        grid-area:contenido5;
+        display: flex;
+        justify-content:center;
+        background-color: #36af7d;
+        font-size: 25px;
+        border-radius: 20%;
+        align-items: center;
+        text-align: center;
+        list-style-type: none;
+        }
+    /* fila 6 */
+    #encabezado6{
+        grid-area:cabeza6;}
+    #parrafo6{
+        grid-area:base6;
+        display: flex;
+        align-items: flex-end;
+        color: azure;
+        font-size: 35px;}
+    #contenido6{
+         grid-area:contenido6;
+         display: flex;
+         flex-flow: column-reverse;
+         justify-content:center;
+         list-style-type: none;
+        text-align: center;}
+}    
+
+/*Estilos a etiquetas*/
+h1{
+    background-color: #00ffff;
+    width: 200px;
+    height: 35px;
+    border: 10px black; 
+    padding: 20px;
+    margin: 0px;
+    border:solid 2px #055858;
+}
+header{
+    width: 100%;
+    height: 650px;
+}
+header p{
+    background-color: #0bf1b8;
+    width: 240px;
+    height: 20px;
+    margin-top: 0px;
+    font-size: 14px;
+    font-family: 'candylicious', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+nav{
+    text-align: center;
+    padding-left: 70%;
+    padding-top: 30vh;
+    margin-top: 10%;
+    
+}
+nav ul{
+    list-style-type: none;
+    border: 0px;
+    margin-top: 0px;
+    padding-left: 0px;
+    background-color: azure;
+}
+nav ul li{
+    border: solid 2px black;
+    
+    
+}
+h2{
+    text-align: center;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    
+    border:groove 3px gray;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #00ffff 74%);
+}
+h3{
+    background-color: #00ffff;
+    
+    text-align: center;
+    border-radius: 5%;
+    background-color: #2a2a72;
+    background-image: linear-gradient(55deg, #2a2a72 0%, #00ffff 74%);}
+
+iframe{
+    border-radius: 20%;
+}
+img{
+    border-radius: 20%;
+    border: solid 5px #00a151;
+}
+/*Menu desplegable*/
+#colorMenu li:hover{
+    background-color: #00a151;
+    color: white;
+    
+}
+#colorMenu li a:hover{
+    color: white;
+}
+#colorMenu>li ul{
+    display: none
+}
+#colorMenu li:hover>ul{
+    display: block;
+}
+/*Mejora visual links*/
+.sacarLineas{
+    text-decoration: none;
+    color: black;
+}
+.sacarLineas2{
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    background-color: turquoise;
+    font-size: 35px;
+    font-family: fantasy, sans-serif;
+    border: dashed 2px;
+}
+.centros{
+    text-align: center;
+    font-size: 40px;
+    background-color: #36af7d;
+    padding-right: 15%;
+    padding-left: 15%;
+    border-radius: 20px;
+    border: outset 6px gray;
+    
+}
+.alinear{
+    text-align: center;
+    list-style-type: none;
+    background-repeat: no-repeat;
+    background-image: url(./imagenes/arrow-blue.gif);
+    background-size: 60px;
+    background-position: 0 60% 0 40%;
+}
+.destacados{
+    background-color:#055858;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid 5px black;}
+
+/*Fondos de Pagina Web*/
+.fondoInicio{
+    background-image: url(https://www.agi-architects.com/blog/wp-content/uploads/2018/02/1130_Exterior_atardecer_beige-768x450.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*otros*/
+.colorAquamarine{
+    background-color: #00ffff;
+}
+.fondoVerde{
+    background-color: #36af7d;
+    font-size: 30px;
+    border-radius: 10%;   
+}
+#pading{
+    padding: 0 12% 0 12%;
+}
