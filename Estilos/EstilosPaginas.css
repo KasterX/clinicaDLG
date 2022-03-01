@@ -1,0 +1,359 @@
+/*Generales*/
+*{
+    font-family: sans-serif;
+    margin: 0;
+
+    padding: 0;
+}
+/*Estilos a etiquetas*/
+h1{
+    background-color: #00ffff;
+    border: 10px black; 
+    border:solid 2px #055858;
+}
+header{
+    width: 100%;
+    height: 650px;
+}
+header p{
+    background-color: #0bf1b8;
+    width: 240px;
+    height: 20px;
+    margin-top: 0px;
+    font-size: 14px;
+    font-family: 'candylicious', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+nav{
+    text-align: center;
+    padding-left: 70%;
+    padding-top: 62vh;
+    
+    
+}
+nav ul{
+    list-style-type: none;
+    border: 0px;
+    margin-top: 0px;
+    padding-left: 0px;
+    background-color: azure;
+}
+nav ul li{
+    border: solid 2px black;
+    
+    
+}
+h2{
+    text-align: center;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    
+    border:groove 3px gray;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #00ffff 74%);
+}
+h3{
+    background-color: #00ffff;
+    
+    text-align: center;
+    border-radius: 5%;
+    background-color: #2a2a72;
+    background-image: linear-gradient(55deg, #2a2a72 0%, #00ffff 74%);}
+
+iframe{
+    border-radius: 20%;
+}
+img{
+    border-radius: 20%;
+    border: solid 5px #00a151;
+}
+p{
+    background-color:#055858;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid 5px black;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+span{
+    background-color:#00ffff;
+    border-radius: 10%;
+    border: solid 5px #055858;
+    font-size: 20px;
+    text-align: center;
+}
+aside{
+    background-color:#00ffff;
+    border-radius: 10%;
+    border: solid 5px #055858;
+    font-size: 30px;
+}
+/*Menu desplegable*/
+#colorMenu li:hover{
+    background-color: #00a151;
+    color: white;
+    
+}
+#colorMenu li a:hover{
+    color: white;
+}
+#colorMenu>li ul{
+    display: none
+}
+#colorMenu li:hover>ul{
+    display: block;
+}
+/*otros*/
+.colorAquamarine{
+    background-color: #00ffff;
+}
+/*Fondos de Pagina Web*/
+.fondoInicio{
+    background-image: url(/Fuentes_Imagenes/TomaDeDecisiones.png.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*Mejora visual links*/
+.sacarLineas{
+    text-decoration: none;
+    color: black;
+}
+.sacarLineas2{
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    background-color: turquoise;
+    font-size: 35px;
+    font-family: fantasy, sans-serif;
+    border: dashed 2px;
+}
+.centros{
+    text-align: center;
+    font-size: 40px;
+    background-color: #36af7d;
+
+    border-radius: 20px;
+    border: outset 6px gray;
+}
+.formulario{
+    border: solid 5px turquoise;
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #00ffff 70%);
+}
+/*grids/
+/*Media Queries*/
+@media (min-width: 1024px){
+    .mainGrids{
+    background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 60%);
+    display:grid;
+    grid-template-areas: 
+    "front     front     front"
+    "articulo  articulo  articulo"
+    "imagen    spam      aside"
+    "articulo2 articulo2 articulo2"
+    "imagen2   spam2     aside2"
+    "articulo3 articulo3 articulo3"
+    "imagen3   spam3     aside3"
+    "articulo4 articulo4 articulo4"
+    "imagen4   spam4     aside4"
+    "articulo5 articulo5 articulo5"
+    "imagen5   spam5     aside5"
+    "lado      lado      lado2"
+    "lado3     lado3     lado3"
+    ;
+    grid-template-columns: 20% 25% 55%;
+    grid-template-rows: auto;
+    align-items: center;
+    }
+}
+#frontal{
+    grid-area: front;
+    align-items: center;
+}
+#lado{
+    grid-area: lado;
+}
+#articulo{
+    grid-area: articulo;
+}
+#imagen{ 
+    grid-area: imagen;
+    
+}
+#aside{
+    text-align: center;
+    grid-area: aside;
+    font-size: 25px;
+}
+#spam{
+    grid-area: spam;
+}
+#lado2{
+    grid-area: lado2;
+    font-size: 30px;
+}
+#articulo2{
+    grid-area: articulo2;
+    font-size: 35px;
+}
+#imagen2{ 
+    grid-area: imagen2;
+    
+}
+#aside2{
+    grid-area: aside2;
+    text-align: center;
+}
+#spam2{
+    grid-area: spam2;
+}
+#lado3{
+    grid-area: lado3;
+    font-family: fantasy Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+}
+#articulo3{
+    grid-area: articulo3;
+}
+#imagen3{ 
+    grid-area: imagen3;
+    
+}
+#aside3{
+    grid-area: aside3;
+    font-size: 25px;
+    text-align: center;
+}
+#spam3{
+    grid-area: spam3;
+}
+#lado4{
+    grid-area: lado4;
+}
+#articulo4{
+    grid-area: articulo4;
+}
+#imagen4{ 
+    grid-area: imagen4;
+    
+}
+#aside4{
+    grid-area: aside4;
+    text-align: center;
+}
+#spam4{
+    grid-area: spam4;
+}
+#lado5{
+    grid-area: lado5;
+}
+#articulo5{
+    grid-area: articulo5;
+}
+#imagen5{ 
+    grid-area: imagen5;
+    
+}
+#aside5{
+    grid-area: aside5;
+    text-align: center;
+}
+#spam5{
+    grid-area: spam5;
+}
+
+@media (min-width: 481px) and (max-width: 1023.9px){
+    .mainGrids{
+    background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 60%);
+    display:grid;
+    grid-template-areas:
+    "front      front"
+    "articulo   articulo"
+    "imagen     imagen"
+    "spam       spam"
+    "aside      aside"
+    "front2     front2"
+    "articulo2  articulo2"
+    "imagen2    imagen2"
+    "spam2      spam2"
+    "aside2     aside2"
+    "fron3      front3"
+    "articulo3  articulo3"
+    "imagen3    imagen3"
+    "spam3      spam3"
+    "aside3     aside3"
+    "front4     front4"
+    "articulo4  articulo4"
+    "imagen4    imagen4"
+    "spam4      spam4"
+    "aside4     aside4"
+    "front5     front5"
+    "articulo5  articulo5"
+    "imagen5    imagen5"
+    "spam5      spam5"
+    "aside5     aside5"
+    "lado       lado2"
+    "lado3      lado3"
+    ;
+    justify-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    }
+nav{padding-top: 55vh;
+    }
+}
+@media (max-width: 480px){
+    .mainGrids{
+    background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 60%);
+    display:grid;
+    grid-template-areas:
+    "front      front"
+    "articulo   articulo"
+    "imagen     imagen"
+    "spam       spam"
+    "aside      aside"
+    "front2     front2"
+    "articulo2  articulo2"
+    "imagen2    imagen2"
+    "spam2      spam2"
+    "aside2     aside2"
+    "fron3      front3"
+    "articulo3  articulo3"
+    "imagen3    imagen3"
+    "spam3      spam3"
+    "aside3     aside3"
+    "front4     front4"
+    "articulo4  articulo4"
+    "imagen4    imagen4"
+    "spam4      spam4"
+    "aside4     aside4"
+    "front5     front5"
+    "articulo5  articulo5"
+    "imagen5    imagen5"
+    "spam5      spam5"
+    "aside5     aside5"
+    "lado       lado"
+    "lado2      lado2"
+    "lado3      lado3"
+        ;
+        justify-items: center;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    #aside3{
+        grid-area: aside3;
+        font-size: 20px;
+    }
+    #aside4{
+        grid-area: aside4;
+        font-size: 25px;
+    }
+nav{
+        padding-top: 50vh;
+    }
+}
