@@ -519,7 +519,17 @@ img{
     border-radius: 20%;
     border: solid 5px #00a151;
 }
-/*Menu desplegable*/
+footer{
+    background-color: #20bf55;
+    background-image: linear-gradient(30deg, #20bf55 0%, #01baef 74%);   
+}
+div{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(241, 241, 148);
+    border: solid #055858; 
+}
+/*Menu desplegable*/ 
 #colorMenu li:hover{
     background-color: #00a151;
     color: white;
@@ -590,3 +600,10 @@ img{
 #pading{
     padding: 0 12% 0 12%;
 }
+.publicidad{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 10px;
+    justify-content: space-between;
+    text-align: center;
+    }

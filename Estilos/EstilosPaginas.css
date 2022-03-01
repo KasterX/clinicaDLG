@@ -10,6 +10,8 @@ h1{
     background-color: #00ffff;
     border: 10px black; 
     border:solid 2px #055858;
+    text-align: center;
+    
 }
 header{
     width: 100%;
@@ -26,7 +28,7 @@ header p{
 nav{
     text-align: center;
     padding-left: 70%;
-    padding-top: 62vh;
+    padding-top: 56vh;
     
     
 }
@@ -88,6 +90,16 @@ aside{
     border: solid 5px #055858;
     font-size: 30px;
 }
+div{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(241, 241, 148);
+    border: solid #055858; 
+}
+footer{
+    background-color: #20bf55;
+    background-image: linear-gradient(30deg, #20bf55 0%, #01baef 74%);
+}
 /*Menu desplegable*/
 #colorMenu li:hover{
     background-color: #00a151;
@@ -104,12 +116,38 @@ aside{
     display: block;
 }
 /*otros*/
+.centrarImagen{
+    text-align: center;
+}
 .colorAquamarine{
     background-color: #00ffff;
 }
+.publicidad{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 10px;
+    justify-content: space-between;
+    text-align: center;
+    }
+.fondosColor{
+    background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 60%)
+}
 /*Fondos de Pagina Web*/
+.fondoInicioMasSobre{
+    background-image: url(/Fuentes_Imagenes/doctores1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .fondoInicio{
     background-image: url(/Fuentes_Imagenes/TomaDeDecisiones.png.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fondoInicioNosotros{
+    background-image: url(/Fuentes_Imagenes/clinicapordentro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -132,7 +170,7 @@ aside{
     text-align: center;
     font-size: 40px;
     background-color: #36af7d;
-
+    
     border-radius: 20px;
     border: outset 6px gray;
 }
@@ -166,7 +204,7 @@ aside{
     grid-template-columns: 20% 25% 55%;
     grid-template-rows: auto;
     align-items: center;
-    }
+}
 }
 #frontal{
     grid-area: front;
