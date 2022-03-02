@@ -30,24 +30,24 @@
     <main>
         <h2>Agende su hora aquí</h2>
         <p>este proceso puede durar unos dias. </p>
-        <form action="">
-            <label for="Nombre completo">Nombre</label>
-            <input type="text" name="Nombre completo" placeholder="Nombre completo">
-            <label for="Correo">Correo</label>
-            <input type="email" name="Correo" placeholder="Correo">
-            <label for="+56 9 12345678">Telefono</label>
-            <input type="number" name="+56 9 12345678" placeholder="+56 9 12345678"><br>
-            <label for="comentarios">Molestias o dolores</label><br>
+        <form class="mainGridsHoraMedica" action="">
+            <label id="frontal" for="Nombre completo">Nombre
+            <input type="text" name="Nombre completo" placeholder="Nombre completo"></label>
+            <label id="lado" for="Correo">Correo
+            <input type="email" name="Correo" placeholder="Correo"></label>
+            <label id="articulo" for="+56 9 12345678">Telefono
+            <input type="number" name="+56 9 12345678" placeholder="+56 9 12345678"></label>
+            <label id="imagen" for="comentarios">Molestias o dolores <br>
             <textarea name="comentarios" cols="30" rows="10"
-                placeholder="algun tipo de molestia o dolores: "></textarea><br>
-            <label for="date">edad</label>
-            <input type="date" name="Edad:"><br>
-            <span>HOMBRE</span>
-            <input type="radio" name="sexo" value="masculino">
-            <span>MUJER</span>
-            <input type="radio" name="sexo" value="femenino"> <br>
-            <label for="especialistas">Especialistas</label> <br> si ya sabe que tiene escoja al especialista en la
-            lista siguiente <br>
+                placeholder="algun tipo de molestia o dolores: "></textarea></label>
+            <label id="aside" for="date">edad
+            <input type="date" name="Edad:"></label>
+            <span id="lado2">HOMBRE
+            <input type="radio" name="sexo" value="masculino"></span>
+            <span id="articulo2">MUJER
+            <input type="radio" name="sexo" value="femenino"> </span>
+            <span id="imagen2"> si ya sabe que tiene escoja al especialista en la lista siguiente</span>
+            <label id="aside2" for="especialistas">Especialistas 
             <select name="especialistas">
                 <option value="Otorrinonaringologo">Otorrinonaringologo</option>
                 <option value="urologia">urologia</option>
@@ -65,20 +65,17 @@
                 <option value="hepatologia">hepatologia</option>
                 <option value="infectologia">infectologia</option>
                 <option value="kinesiología">kinesiología</option>
-            </select> <br>
-            <span>Acepto terminos y condiciones</span>
-            <input type="checkbox" name="acepto" value="1"><br>
-            <span>Declaro que los datos son correctos</span>
-            <input type="checkbox" name="acepto"> <br>
-            <input type="submit" value="enviar">
-
-
-
+            </select></label>
+            <span id="imagen3">Acepto terminos y condiciones
+            <input type="checkbox" name="acepto" value="1"></span>
+            <span id="articulo3">Declaro que los datos son correctos
+            <input type="checkbox" name="acepto"></span>
+            <input id="lado3" type="submit" value="enviar">
 
         </form>
 
         <hr>
-        <a href="./examenespcr.html">CLICK AQUÍ PARA AGENDAR EXAMEN PCR</a>
+        <a id="aside3" class="sacarLineas" href="./examenespcr.html">CLICK AQUÍ PARA AGENDAR EXAMEN PCR</a>
     </main>
     <hr>
     <footer>
