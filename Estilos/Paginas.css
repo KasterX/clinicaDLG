@@ -135,31 +135,31 @@ footer{
 }
 /*Fondos de Pagina Web*/
 .fondoInicioMasSobre{
-    background-image: url(/Fuentes_Imagenes/doctores1.jpg);
+    background-image: url(../Fuentes_Imagenes/doctores1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .fondoInicio{
-    background-image: url(/Fuentes_Imagenes/TomaDeDecisiones.png.jpg);
+    background-image: url(../Fuentes_Imagenes/TomaDeDecisiones.png.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .fondoInicioNosotros{
-    background-image: url(/Fuentes_Imagenes/clinicapordentro.jpg);
+    background-image: url(../Fuentes_Imagenes/clinicapordentro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .fondoInicioCovid19{
-    background-image: url(/Fuentes_Imagenes/covid19.jpg);
+    background-image: url(../Fuentes_Imagenes/covid19.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .fondoInicioFarmacia{
-    background-image: url(/Fuentes_Imagenes/Farmacias.jpg);
+    background-image: url(../Fuentes_Imagenes/Farmacias.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
