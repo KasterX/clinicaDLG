@@ -603,7 +603,7 @@ div{
     text-align: center;
     list-style-type: none;
     background-repeat: no-repeat;
-    background-image: url(./imagenes/arrow-blue.gif);
+    background-image: url(../Fuentes_Imagenes/arrow-blue.gif);
     background-size: 60px;
     background-position: 0 60% 0 40%;
 }
