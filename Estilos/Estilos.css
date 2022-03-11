@@ -159,7 +159,19 @@
     text-align: center;
     justify-content: space-between;
 }
-
+.centrar{
+    margin: 0 30% 0 30% ;
+}
+.sacarLineas2{
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    background-color: turquoise;
+    font-size: 35px;
+    font-family: fantasy, sans-serif;
+    border: dashed 2px;
+    ;
+}
 }
                 /**********TABLET**************/
 @media (min-width: 481px) and (max-width: 1023px){
@@ -316,6 +328,20 @@
         text-align: center;
         justify-content: space-between;
         }
+    .centrar{
+        margin: 0 30% 0 30% ;
+        font-size: 20px;
+    }
+    .sacarLineas2{
+        text-decoration: none;
+        color: black;
+        list-style-type: none;
+        background-color: turquoise;
+        font-size: 30px;
+        font-family: fantasy, sans-serif;
+        border: dashed 2px;
+        ;
+    }
 }
 /*SMARTPHONE*/
 @media (max-width: 480px){
@@ -478,7 +504,20 @@
     margin: 40px;
     align-items: center;
     text-align: center;
-}
+    }
+    .centrar{
+    margin: 0 10% 0 35% ;
+    }
+    .sacarLineas2{
+        text-decoration: none;
+        color: black;
+        list-style-type: none;
+        background-color: turquoise;
+        font-size: 20px;
+        font-family: fantasy, sans-serif;
+        border: dashed 2px;
+        ;
+    }
 }    
 
 /*Estilos a etiquetas*/
@@ -549,7 +588,8 @@ img{
 }
 footer{
     background-color: #20bf55;
-    background-image: linear-gradient(30deg, #20bf55 0%, #01baef 74%);   
+    background-image: linear-gradient(30deg, #20bf55 0%, #01baef 74%); 
+    padding-bottom: 10vh;  
 }
 div{
     height: 200px;
@@ -558,6 +598,9 @@ div{
     border: solid #055858;
     margin-left: 20px;
     margin-top: 20px;
+}
+em{
+    font-size: x-large;
 }
 
 /*Menu desplegable*/ 
@@ -580,14 +623,56 @@ div{
     text-decoration: none;
     color: black;
 }
-.sacarLineas2{
-    text-decoration: none;
-    color: black;
-    list-style-type: none;
-    background-color: turquoise;
-    font-size: 35px;
-    font-family: fantasy, sans-serif;
-    border: dashed 2px;
+/* animaciones*/
+.alinear{
+    animation-name: ladolado;
+    animation-duration: 5s;
+    animation-delay: none;
+    animation-iteration-count: infinite;
+}
+@keyframes ladolado{
+    0% {
+        background-color: #00a151;
+        transform: translateX(-2000px);
+    }
+    50%{
+        transform: translateX(10px);
+    }
+    60%{
+       transform: translateX(-300px); 
+    }
+    100%{
+        transform: rotateX(2%);
+    }
+}
+.alinear1{
+    animation-name: ladolado1;
+    animation-duration: 5s;
+    animation-delay: none;
+    animation-iteration-count: infinite;
+}
+@keyframes ladolado1{
+    0% {
+        background-color: #00a151;
+        transform: translateX(0px);
+    }
+    40%{
+        transform: translateX(180%);
+    }
+    60%{
+       transform: translateX(-200px); 
+    }
+    100%{
+        transform: rotateX(1000px);
+    }
+}
+.marketing{
+transition: height 5s; 
+transition: width 2s;
+}
+.marketing:hover{
+    height: 400px;
+    width: 400px;
 }
 .centros{
     text-align: center;
@@ -597,15 +682,6 @@ div{
     padding-left: 15%;
     border-radius: 20px;
     border: outset 6px gray;
-    
-}
-.alinear{
-    text-align: center;
-    list-style-type: none;
-    background-repeat: no-repeat;
-    background-image: url(../Fuentes_Imagenes/arrow-blue.gif);
-    background-size: 60px;
-    background-position: 0 60% 0 40%;
 }
 .destacados{
     background-color:#055858;

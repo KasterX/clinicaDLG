@@ -191,6 +191,15 @@ footer{
     background-color: #2a2a72;
     background-image: linear-gradient(315deg, #2a2a72 0%, #00ffff 70%);
 }
+/*animaciones*/
+.marketing{
+    transition: height 5s; 
+    transition: width 2s;
+    }
+    .marketing:hover{
+        height: 400px;
+        width: 400px;
+    }
 /*grids/
 /*Media Queries*/
 @media (min-width: 1024px){
